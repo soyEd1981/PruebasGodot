@@ -1,0 +1,36 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Control",
+"class": "SelectorImagen",
+"language": "GDScript",
+"path": "res://UI/SelectorImagen.gd"
+} ]
+_global_script_class_icons={
+"SelectorImagen": ""
+}
+
+[application]
+
+config/name="Prototipo Juego Android"
+config/icon="res://Assets/Minifantasy - GUI v1.0/Assets/OverlayMocku1p.png"
+
+[autoload]
+
+ExploradorArchivos="*res://Globales/ExploradorArchivos.gd"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

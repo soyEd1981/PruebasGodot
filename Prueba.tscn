@@ -1,0 +1,85 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Personajes/PersonajeBase.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Prueba.gd" type="Script" id=2]
+
+[node name="Prueba" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cabello" type="Button" parent="."]
+margin_left = 359.296
+margin_top = 333.418
+margin_right = 418.296
+margin_bottom = 353.418
+text = "Cabello"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cuerpo" type="Button" parent="."]
+margin_left = 359.296
+margin_top = 353.418
+margin_right = 416.296
+margin_bottom = 373.418
+text = "Cuerpo"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sombrero" type="Button" parent="."]
+margin_left = 359.296
+margin_top = 373.418
+margin_right = 416.296
+margin_bottom = 393.418
+text = "Sombrero"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Camisa" type="Button" parent="."]
+margin_left = 359.296
+margin_top = 393.418
+margin_right = 433.296
+margin_bottom = 413.418
+text = "Camisa"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Inicio" type="Button" parent="."]
+margin_left = 525.296
+margin_top = 393.418
+margin_right = 599.296
+margin_bottom = 413.418
+text = "Iniciar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -100.0
+margin_top = -100.0
+margin_right = 100.0
+margin_bottom = 100.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PersonajeBase" parent="CenterContainer" instance=ExtResource( 1 )]
+position = Vector2( 60, 60 )
+scale = Vector2( 10, 10 )
+
+[connection signal="pressed" from="Cabello" to="." method="_on_Cabello_pressed"]
+[connection signal="pressed" from="Cuerpo" to="." method="_on_Cuerpo_pressed"]
+[connection signal="pressed" from="Sombrero" to="." method="_on_Sombrero_pressed"]
+[connection signal="pressed" from="Camisa" to="." method="_on_Camisa_pressed"]
+[connection signal="pressed" from="Inicio" to="." method="_on_Inicio_pressed"]
