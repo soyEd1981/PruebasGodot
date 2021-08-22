@@ -9,23 +9,24 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Control",
-"class": "SelectorImagen",
+"base": "Resource",
+"class": "Estadisticas",
 "language": "GDScript",
-"path": "res://UI/SelectorImagen.gd"
+"path": "res://Misc/Estadisticas.gd"
 } ]
 _global_script_class_icons={
-"SelectorImagen": ""
+"Estadisticas": ""
 }
 
 [application]
 
-config/name="Prototipo Juego Android"
-config/icon="res://Assets/Minifantasy - GUI v1.0/Assets/OverlayMocku1p.png"
+config/name="Esto-es-otra-prueba"
+run/main_scene="res://Niveles/Main.tscn"
+config/icon="res://icon.png"
 
 [autoload]
 
-ExploradorArchivos="*res://Globales/ExploradorArchivos.gd"
+GlobalSenales="*res://GlobalSenales.gd"
 
 [physics]
 
